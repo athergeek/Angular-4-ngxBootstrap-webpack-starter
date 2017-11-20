@@ -18,6 +18,29 @@ $ npm start
 # the produced code can be deployed (rsynced) to a remote server
 $ npm run build
 ```
+### Ubuntu Users
+# Use apt-get to install the build-essential package
+$ sudo apt-get install build-essential checkinstall
+
+# Employ a similar process to get libssl-dev:
+$ sudo apt-get install libssl-dev
+
+# install nvm ( Node version Manager)
+$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash
+
+# You will be asked to close and reopen the terminal. To verify that nvm has been successfully installed after you reopen the terminal, use:
+$ command -v nvm
+# That command will output nvm if the installation worked.
+
+# To download, compile and install the latest version of Node:nvm install 5.0
+$ nvm install 8.9.1
+
+# Set 8.9.1 as your default
+$ nvm use 8.9.1
+
+# When you do "npm start" if you get following error
+# Cannot find module "@ngtools/webpack" then use the solution below
+# https://github.com/uber/deck.gl/issues/723
 
 ### Code scaffolding
 
