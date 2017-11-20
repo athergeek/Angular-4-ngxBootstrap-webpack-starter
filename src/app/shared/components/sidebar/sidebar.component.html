@@ -1,16 +1,20 @@
 <nav class="sidebar" [ngClass]="{sidebarPushRight: isActive}">
     <ul class="list-group">
-        <a routerLink="/option1" [routerLinkActive]="['router-link-active']" class="list-group-item">
-            <i class="fa fa-fw fa-dashboard"></i>&nbsp;{{ 'Option-1'}}
+        <a routerLink=""  class="list-group-item">
+            <i class="fa fa-fw fa-dashboard"></i>&nbsp;{{ 'Dashboard'}}
         </a>
-        <a [routerLink]="['/option2']" [routerLinkActive]="['router-link-active']" class="list-group-item">
-            <i class="fa fa-fw fa-bar-chart-o"></i>&nbsp;{{ 'Option-2' }}
+        <a [routerLink]=""  class="list-group-item">
+            <i class="fa fa-fw fa-bar-chart-o"></i>&nbsp;{{ 'Course Listing' }}
         </a>
-        <a [routerLink]="['/option3']" [routerLinkActive]="['router-link-active']" class="list-group-item">
-            <i class="fa fa-fw fa-table"></i>&nbsp;{{ 'Option-3' }}
+        <a [routerLink]=""  class="list-group-item">
+            <i class="fa fa-fw fa-table"></i>&nbsp;{{ 'Manage Requests' }}
         </a>
-        <a [routerLink]="['/option4']" [routerLinkActive]="['router-link-active']" class="list-group-item">
-            <i class="fa fa-fw fa-edit"></i>&nbsp;{{ 'Option-4' }}
+        <a [routerLink]=""  class="list-group-item">
+            <i class="fa fa-fw fa-user"></i>&nbsp;{{ 'Teacher Assignment' }}
         </a>
+        <a [routerLink]=""  class="list-group-item">
+            <i class="fa fa-fw fa-address-card-o"></i>&nbsp;{{ 'Student Records ' }}
+        </a>
+        
     </ul>
 </nav>
